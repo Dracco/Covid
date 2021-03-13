@@ -1,0 +1,22 @@
+﻿@model CovidWebApi.Models.ConfirmedViewModel
+
+<div class="row custyle">
+    <table class="table table-striped custab">
+        <thead>
+            <tr>
+                <th>Ano-Mês</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var m in Model.ConfirmedList)
+            {
+                <tr>
+                    <td>@m.AnoMes </td>
+                    <td>@m.Total </td>
+                </tr>
+            }
+        </tbody>
+
+    </table>
+</div>
